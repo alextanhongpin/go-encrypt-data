@@ -19,6 +19,9 @@ import (
 // https://stackoverflow.com/questions/18817336/golang-encrypting-a-string-with-aes-and-base64
 // https://medium.com/@badu_bizzle/per-user-encryption-in-elixir-part-i-645f2dfaf8e6
 // https://astaxie.gitbooks.io/build-web-application-with-golang/en/09.6.html
+
+// How to implement it with SQL.
+// http://jmoiron.net/blog/built-in-interfaces/
 func main() {
 	// user key: unique key generated for each user on registration. This key will be used to encrypt/decrypt all user's data. It remains unchanged for user.
 	userKey, err := generateRandomBytes(32)
