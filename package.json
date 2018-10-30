@@ -1,0 +1,26 @@
+{
+  "name": "encrypt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alextanhongpin/go-encrypt-data.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alextanhongpin/go-encrypt-data/issues"
+  },
+  "homepage": "https://github.com/alextanhongpin/go-encrypt-data#readme",
+  "dependencies": {
+    "eth-crypto": "^1.2.5",
+    "ethereumjs-wallet": "^0.6.2",
+    "keythereum": "^1.0.4",
+    "web3": "^1.0.0-beta.36"
+  }
+}

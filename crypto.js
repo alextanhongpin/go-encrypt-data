@@ -1,5 +1,8 @@
 const crypto = require('crypto')
 
+// https://crypto.stackexchange.com/questions/41601/aes-gcm-recommended-iv-size-why-12-bytes/41610
+const NONCE_LEN = 12
+
 async function randomBytes (keyLen = 32) {
   return new Promise((resolve, reject) => {
     crypto.randomBytes(keyLen, (err, buf) => {
