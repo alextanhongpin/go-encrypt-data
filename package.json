@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/alextanhongpin/go-encrypt-data#readme",
   "dependencies": {
+    "bip39": "^2.5.0",
     "eth-crypto": "^1.2.5",
     "ethereumjs-wallet": "^0.6.2",
     "keythereum": "^1.0.4",

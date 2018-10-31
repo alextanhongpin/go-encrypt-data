@@ -29,6 +29,13 @@ async function main () {
   log.add(['decrypted data', decryptedData.toString('hex')])
 
   log.print()
+
+  // Encryption/decryption with ethereum private key. We probably do not need to generate a salt or pbkdf2, since the private key must be unique.
+  const privateKey = Buffer.from('', 'hex')
+  const e2 = await encrypt(privateKey, 'some secret data')
+  console.log(e2)
+  const d2 = await decrypt(privateKey, e2)
+  console.log(d2.toString('utf8'))
 }
 
 async function generateKeyHash (password) {
